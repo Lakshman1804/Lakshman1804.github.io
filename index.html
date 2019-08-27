@@ -1,0 +1,582 @@
+<html>
+	<head>
+		<title>My Resume</title>
+		<link href="Bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="Bootstrap/dist/css/font-awesome.css" rel="stylesheet">
+		<script src="Bootstrap/dist/js/jquery.min.js"></script>
+		<script src="Bootstrap/dist/js/bootstrap.js"></script>
+		<style>
+			.mywell1{
+				background-image:linear-gradient(to right, #164657, #55808F, #85AFBD, #55808F, #164657);
+				color:white;
+			}
+			.mywell1z{
+				background-image:linear-gradient(to right, #164657, #55808F, #85AFBD, #55808F, #164657);
+				color:white;
+			}
+			.mywell1a{
+				padding:20px 0px;
+				font-size:18px;
+			}
+			.mywell1a>span{
+				padding-right:10px;
+			}
+			.mywell1b{
+				color:white;
+			}
+			.mywell1c{
+				padding-top:25px;
+				padding-bottom:15px;
+			}
+			.mywell1c>span{
+				margin-right:15px;
+			}
+			.img1{
+				height:400px;
+				width:500px;
+				webkit-transition:transform 3s;
+				transition:transform 3s;
+			}
+			.img1:hover{
+				webkit-transform:scale(2,3);
+				transform:scale(2,2);
+				z-index:99px;
+			}
+			.mywell1e{
+				background:radial-gradient(circle, #d9475c 5%, #C6716E 20%, #d9475c);
+			}
+			.bt1{
+				width:50%;
+			}
+			.bt1a{
+				padding:10px 0px;
+				font-size:18px;
+			}
+			.mywell1d{
+				font-size:18px;
+				padding:30px 0px;
+				color:white;
+			}
+			.mywell1e{
+				min-height:875px;
+			}
+			.bt2{
+				margin-top:60px;
+				width:30%;
+				padding:15px 0px;
+				border-radius:15px;
+			}
+			.bt4{
+				margin-top:60px;
+				margin-left:20px;
+				width:30%;
+				padding:15px 0px;
+				border-radius:15px;
+			}
+			.bt3{
+				width:30%;
+				margin-top:20px;
+				padding:15px 0px;
+				border-radius:15px;
+			}
+			.bt5{
+				width:30%;
+				margin-top:20px;
+				margin-left:20px;
+				padding:15px 0px;
+				border-radius:15px;
+			}
+			.textatend{
+				font-size:18px;
+			}
+			.changeatend{
+				padding:10px 0px;
+			}
+			.textatend1{
+				margin-left:120px;
+			}
+			#datashown{
+				text-align:center;
+			}
+			.aq1{
+				padding-top:30px;
+				font-size:23px;
+				font-weight:bold;
+				margin-bottom:20px;
+				color:#5bc0de;
+				text-shadow: 5px 10px 5px silver;
+			}
+			.aq1t{
+				border:2px solid black;
+				margin-bottom:40px;
+			}
+			.aq1t>thead{
+				background-color:black;
+				color:white;
+			}
+			.aq1t>thead>tr>th{
+				text-align:center;
+				padding:15px 0px;
+			}
+			.aq1r1>td{
+				text-align:center;
+			}
+			#inner1{
+				font-size:23px;
+				text-align:center;
+				font-weight:bold;
+				padding:20px 0px;
+				color:#5bc0de;
+				text-shadow: 5px 10px 5px silver;
+			}
+			#inner{
+				font-size:15px;
+				margin-left:20px;
+				text-align:justify;
+			}
+			#inner2{
+				font-size:15px;
+				margin-left:20px;
+				text-align:justify;
+				margin-bottom:20px;
+			}
+			.tech1{
+				padding:20px 0px;
+				font-size:23px;
+				font-weight:bold;
+				color:#5bc0de;
+				text-shadow: 5px 10px 5px silver;
+			}
+			.techtable{
+				border:2px solid gray;
+			}
+			.techtd{
+				background-color:black;
+				color:white;
+			}
+			.exp1{
+				color:#5bc0de;
+				font-size:23px;
+				padding:20px 0px;
+				font-weight:bold;
+				text-shadow: 5px 10px 5px silver;
+			}
+			.exp2{
+				font-size:16px;
+				margin-bottom:20px;
+				text-align:justify;
+			}
+			.exp3{
+				font-size:19px;
+				font-weight:bold;
+			}
+			.pers1{
+				font-size:23;
+				color:#5bc0de;
+				font-weight:bold;
+				text-shadow: 5px 10px 5px silver;
+			}
+			.pers2{
+				font-size:18px;
+			}
+			.pers3{
+				text-align:right;
+			}
+			.mywelllv1{
+				color:#5bc0de;
+				font-weight:bold;
+				text-shadow: 5px 10px 5px silver;
+			}
+			.mywelllv1a{
+				margin-top:50px;
+				font-size:25px;
+			}
+			.mywelllv1b{
+				font-size:18px;
+			}
+			.mywelllv1c{
+				font-size:25px;
+				margin-top:30px;
+			}
+			.mywelllv1d{
+				height:400px;
+				width:80%;
+				background-image:url('images/reume2.png');
+				background-size:cover;
+				background-repeat:no-repeat;
+			}
+			.mywelllv1e{
+				padding:20px 0px;
+			}
+			.mywelllv1g{
+				font-size:15px;
+			}
+			.mywelllv1g>a{
+				text-decoration:none;
+				font-size:18px;
+			}
+			.techclick>span{
+				color:red;
+			}
+			.techclick>span:hover{
+				color:silver;
+				cursor:hand;
+			}
+			.prog1{
+				padding-top:20px;
+				font-style:italic;
+				font-weight:bold;
+				color:#55808F;
+				text-shadow: 5px 10px 5px silver;
+			}
+			.progress{
+				height:30px;
+			}
+			
+			.coimg{
+				height:20px;
+				width:40%;
+				background-size:cover;
+				background-position:center;
+			}
+			
+		</style>
+		<script>
+			function addtext()
+			{
+				document.getElementById("div1").innerHTML = " To work for an organization which provides me the opportunity to improve my skills and  knowledge to growth along the organization objective.";
+				document.getElementById("div1").style="font-size:25px";
+			}
+			function removetext()
+			{
+				document.getElementById("div1").innerHTML="";
+			}
+			function academicQualifications()
+			{
+					//alert();
+				if (window.XMLHttpRequest) 
+				{
+					// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp = new XMLHttpRequest();
+				} 
+				else 
+				{
+					// code for IE6, IE5
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.onreadystatechange = function() 
+				{
+					if (this.readyState == 4 && this.status == 200) 
+					{
+						document.getElementById("datashown").innerHTML = this.responseText;
+					}
+				};
+				xmlhttp.open("GET","academicqualifications.html",true);
+				xmlhttp.send();
+			}
+			function academicQualificationsClose()
+			{
+					//alert();
+				if (window.XMLHttpRequest) 
+				{
+					// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp = new XMLHttpRequest();
+				} 
+				else 
+				{
+					// code for IE6, IE5
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.onreadystatechange = function() 
+				{
+					if (this.readyState == 4 && this.status == 200) 
+					{
+						document.getElementById("datashown").innerHTML ="";
+					}
+				};
+				xmlhttp.open("GET","",true);
+				xmlhttp.send();
+			}
+			function personalitySkills()
+			{
+				document.getElementById("datashown").style.textAlign="center";
+				document.getElementById("datashown").innerHTML="<div id='inner1'>PERSONALITY TRAITS</div><div id='inner'>> Good communication skills, Presentation skills.</div><div id='inner2'>> Ability to work as an individual as well as in group and good at sourcing.</div>";
+				document.getElementById("datashown").style.color="black";					
+			}
+			function personalitySkillsClose()
+			{
+				document.getElementById("datashown").innerHTML="";
+			}	
+			var tecskills=[
+							{"sub":"Programming Languages","nametec":"Core Java, Basics of C"},
+							{"sub":"Softwares Known","nametec":"VHDL, PSPICE, MATLAB, CNC programming, Solid Works, AutoCAD electrical, CIMCO, MASTERCAM"}
+								];
+			var tech="";
+					tech=tech + "<center class='tech1'>TECHNICAL SKILLS</center>";
+					tech=tech + "<table class='table table-bordered table-hover techtable'>";
+					for(i=0; i<tecskills.length; i++)
+					{
+							tech=tech + "<tr class='techtr'>";
+								tech=tech + "<td class='techtd'>"+ tecskills[i].sub +"</td>";
+								tech=tech + "<td>"+ tecskills[i].nametec +"</td>";
+							tech=tech + "</tr>";
+					}
+					tech=tech + "</table>";
+					tech=tech + "<h3 class='techclick'><span onclick='progress()'>CLICK HERE </span> to see the progress</h3>";
+			function technicalSkills()
+			{
+				document.getElementById("datashown").innerHTML=tech;
+			}
+			function progress()
+			{
+				var prog="";
+					prog=prog + "<div class='row'>";
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='right' behaviour='alternate'>CORE JAVA</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-success progress-bar-striped active' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:80%'> 80% </div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='left' behaviour='alternate'>Basics of C</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-danger progress-bar-striped active' role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width:50%'> 50%</div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+					prog=prog + "</div>";
+					prog=prog + "<div class='row'>";
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='right' behaviour='alternate'>CNC programming</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-success progress-bar-striped active' role='progressbar' aria-valuenow='90' aria-valuemin='0' aria-valuemax='100' style='width:90%'> 90% </div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='left' behaviour='alternate'>PSPICE</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-success progress-bar-striped active' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:80%'> 80%</div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+					prog=prog + "</div>";
+					prog=prog + "<div class='row'>";
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='right' behaviour='alternate'>AutoCAD ELECTRICAL</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-info progress-bar-striped active' role='progressbar' aria-valuenow='70' aria-valuemin='0' aria-valuemax='100' style='width:70%'> 70% </div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='left' behaviour='alternate'>SOLID WORKS</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-success progress-bar-striped active' role='progressbar' aria-valuenow='85' aria-valuemin='0' aria-valuemax='100' style='width:85%'> 85%</div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+					prog=prog + "</div>";
+					prog=prog + "<div class='row'>";
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='right' behaviour='alternate'>CIMCO</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-success progress-bar-striped active' role='progressbar' aria-valuenow='80' aria-valuemin='0' aria-valuemax='100' style='width:80%'> 80% </div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='left' behaviour='alternate'>MASTERCAM</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-danger progress-bar-striped active' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width:60%'> 60%</div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+					prog=prog + "</div>";
+					prog=prog + "<div class='row'>";
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='right' behaviour='alternate'>MATLAB</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-danger progress-bar-striped active' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width:60%'> 60% </div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+						prog=prog + "<div class='col-sm-6'>";
+								prog=prog + "<h2 class='prog1'><marquee direction='left' behaviour='alternate'>VHDL</marquee></h2>"
+								prog=prog + "<div class='progress'>"
+									prog=prog + "<div class='progress-bar progress-bar-danger progress-bar-striped active' role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width:50%'> 50%</div>"
+								prog=prog + "</div>"
+						prog=prog + "</div>"
+					prog=prog + "</div>";
+				document.getElementById("datashown").innerHTML=tech+prog;
+				document.getElementById("datashown").style.paddingBottom="30px";
+				$(".techclick").fadeOut(5000);
+			}
+			function technicalSkillsClose()
+			{
+				document.getElementById("datashown").innerHTML="";
+			}
+			function experiance()
+			{
+				document.getElementById("datashown").innerHTML="<div class='exp1'>EXPERIANCE</div><p class='exp2'>> Industrial training for a month in <span class='exp3'>SHENGQI LIGHTING TECHNOLOGY CO.LTD</span> located in <span class='exp3'>CHANG PING in CHINA</span> later worked as an <span class='exp3'>OVEREAS PRESENTATOR</span> and <span class='exp3'>DESIGNAL ENGINEER.</span></p>";
+			}
+			function experianceClose()
+			{
+				document.getElementById("datashown").innerHTML="";
+			}
+			function cirrcular()
+			{
+				document.getElementById("datashown").innerHTML="<div class='exp1'>Co-Cirrcular Activitie</div><p class='exp2'>> Participated in “DESIGN OF VHDL CODES” workshop conducted by SCHOOL OF ELECTRICAL AND ELECTRONICS at Sathyabama University.</p>";
+			}
+			function cirrcularClose()
+			{
+				document.getElementById("datashown").innerHTML="";
+			}
+			function personal()
+			{
+				var v='[{"sub1":"Father Name", "sub2":": P V Ramana Reddy"},{"sub1":"Permanent Address", "sub2":": D.no:- 3/18, peddachiyapadu, chapadu, Kadapa, Andhra Pradesh, 516355."},{"sub1":"Date Of Birth", "sub2":": 18th April 1996."},{"sub1":"Languages Known", "sub2":": English, Telugu, Hindi, Tamil."}]'
+				var p=JSON.parse(v);
+				var r="<form class='formba1'>";
+					r=r+"<h3 class='text-center pers1'>PERSONAL DETAILS<h3>";
+					for(var i=0;i<p.length;i++)
+					{
+						r=r+"<div class='row'>";
+							r=r+"<div class='col-sm-3'></div>"
+							r=r+"<div class='col-sm-3 text-justify'>";
+								r=r+"<label class='pers2 pers3'>"+ p[i].sub1+"</label>";
+							r=r+"</div>";
+							r=r+"<div class='col-sm-6 text-justify'>";
+								r=r+"<label class='pers2'>"+ p[i].sub2+"</label>";
+							r=r+"</div>";
+						r=r+"</div>";
+					}
+				r=r+"</form>";
+				document.getElementById("datashown").innerHTML=r;
+			}
+			function personalClose()
+			{
+				document.getElementById("datashown").innerHTML="";
+			}
+			function acdprj()
+			{
+				var lv="";
+					lv=lv+"<h2 class='mywelllv1'>PERFORMANCE ANALYSIS OF AN EFFICIENT FIR FILTER VLSI ARCHITECTURE USING LIFTING DWT</h2>";
+					lv=lv+"<h4 class='mywelllv1a'>INTRODUCTION</h4>";
+					lv=lv+"<p class='mywelllv1b text-justify'> > Finite Impulse Response(FIR)Filter is a filter whose impulse response is of finite duration. Impulse response of nth order FIR filter has N+1 samples before it settles to 0.</p>";
+					lv=lv+"<p class='mywelllv1b text-justify'>> In FIR filters inherently pipelined and Multiple Constant Multiplications(MCM) are used as they result in significant saving of computation.</p>";
+					lv=lv+"<p class='mywelllv1b text-justify'>> The aim of this project is to reduce the number of flip flops by Lifting DWT.</p>";
+					lv=lv+"<p class='mywelllv1b text-justify'>> It is composed of three basic operation stages: split or merge predict and update.</p>";
+					lv=lv+"<div class='mywelllv1c'>OUTPUT</h4>";
+					lv=lv+"<figure class='mywelllv1e'><img class='mywelllv1d'></figure>";
+					lv=lv+"<p class='mywelllv1g'><a href='#' onclick='fullprjct()'>Click here </a>to see full project details.</p>";
+				document.getElementById("datashown").innerHTML=lv;
+			}
+			function acdPrjClose()
+			{
+				document.getElementById("datashown").innerHTML="";
+			}
+			function fullprjct()
+			{
+						//alert();
+				if (window.XMLHttpRequest) 
+				{
+					// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp = new XMLHttpRequest();
+				} 
+				else 
+				{
+					// code for IE6, IE5
+					xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xmlhttp.onreadystatechange = function() 
+				{
+					if (this.readyState == 4 && this.status == 200) 
+					{
+						document.getElementById("datashown").innerHTML = this.responseText;
+					}
+				};
+				xmlhttp.open("GET","projectinBE.html",true);
+				xmlhttp.send();
+			}
+			function fullPrjClose()
+			{
+				document.getElementById('datashown').innerHTML="THANK YOU FOR YOUR VALUABLE TIME";
+				document.getElementById("datashown").style="font-size:25px; font-weight:bold";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row mywell1">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-4">
+					<label class="mywell1a"><span class="glyphicon glyphicon-user"> </span> P. LAKSHMAN KUMAR REDDY</label>
+				</div>
+				<div class="col-sm-4 text-right mywell1b">
+					<label class="mywell1c"><span>Call: +918220999928 </span> E-mail @: peddireddylakshman@gmail.com</label>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="dropdown">
+						<button type="button" onclick="addtext()" ondblclick="removetext()" class="btn btn-info bt1 dropbtn"><h5 class="bt1a"> Career Objective </h5></button>
+						<div class="dropdown-content text-center">
+								<h6 class="text-center">Click to view Career Objective</h6>
+								<img class="coimg" src="images/resumea1.png">
+						</div>
+					</div>
+					<div id="div1"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid mywell1e">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<label class="mywell1d">PROFILE</label>
+					<div><img class="img1 img-circle" src="images/resume1.jpg"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 text-center"></div>
+				<div class="col-sm-8 text-center">
+					<button type="button" class="btn btn-info bt2" onclick="academicQualifications()" ondblclick="academicQualificationsClose()">Academic Qualifications</button>
+					<button type="button" class="btn btn-info bt4" onclick="personalitySkills()" ondblclick="personalitySkillsClose()">Personality Traits</button>
+				</div>
+				<div class="col-sm-2 text-center"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 text-center"></div>
+				<div class="col-sm-8 text-center">
+					<button type="button" class="btn btn-info bt3" onclick="technicalSkills()" ondblclick="technicalSkillsClose()">Technical Skills</button>
+					<button type="button" class="btn btn-info bt5" onclick="experiance()" ondblclick="experianceClose()">Experiance</button>
+				</div>
+				<div class="col-sm-2 text-center"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 text-center"></div>
+				<div class="col-sm-8 text-center">
+					<button type="button" class="btn btn-info bt3" onclick="cirrcular()" ondblclick="cirrcularClose()">Co-Cirrcular Activities</button>
+					<button type="button" class="btn btn-info bt5" onclick="acdprj()" ondblclick="acdPrjClose()">Academic Project</button>
+				</div>
+				<div class="col-sm-2 text-center"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 text-center"></div>
+				<div class="col-sm-8 text-center">
+					<button type="button" class="btn btn-info bt3" onclick="other()" ondblclick="otherClose()">Other Projects Done</button>
+					<button type="button" class="btn btn-info bt5" onclick="personal()" ondblclick="personalClose()">Personal Details</button>
+				</div>
+				<div class="col-sm-2 text-center"></div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 text-center" id="datashown"></div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row mywell1z">
+				<div class="col-sm-2"></div>
+				<div class="col-sm-8 changeatend"><span class="textatend">Declaration:</span><br>
+					<p class="textatend1">I hereby declare that the above mentioned information is true to the best of my knowledge</p>
+				</div>
+				<div class="col-sm-2"></div>
+			</div>
+		</div>
+	</body>
+</html>
