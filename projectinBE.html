@@ -1,0 +1,184 @@
+<html>
+	<head>
+		<title>My Resume</title>
+		<link href="Bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="Bootstrap/dist/css/font-awesome.css" rel="stylesheet">
+		<script src="Bootstrap/dist/js/jquery.min.js"></script>
+		<script src="Bootstrap/dist/js/bootstrap.js"></script>
+		<style>
+			.mywelllvtab{
+				background-color:black;
+				color:white;
+			}
+			.mywelllv1aa{
+				margin-top:20px;
+				font-size:25px;
+			}
+			.mywelllvlaa1{
+				font-size:18px;
+			}
+			.mywelllvlaa1>span{
+				margin-left:60px;
+			}
+			.mywelllv1dd{
+				height:400px;
+				width:80%;
+				background-size:cover;
+				background-repeat:no-repeat;
+				border:10px solid gray;
+				box-shadow:10px 10px 5px silver;
+			}
+			.mywelllv1dd1{
+				height:400px;
+				width:40%;
+				background-size:cover;
+				background-repeat:no-repeat;
+				border:10px solid gray;
+				box-shadow:10px 10px 5px silver;
+			}
+			.mywelllv1aa2{
+				font-size:18px;
+				padding-top:20px;
+			}
+			.mywelllv1aa2>span{
+				margin-left:60px;
+			}
+			.mywelllv1aa3{
+				margin-top:45px;
+				font-size:25px;
+			}
+			.mywelllv1p{
+				background-color:black;
+				color:white;
+			}
+			.mywelllv1m{
+				margin:60px 0px;
+				height:300px;
+				width:50%;
+				background-size:cover;
+				background-repeat:no-repeat;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h2 class='mywelllv1'>PERFORMANCE ANALYSIS OF AN EFFICIENT FIR FILTER VLSI ARCHITECTURE USING LIFTING DWT</h2>
+					<h4 class='mywelllv1a'>INTRODUCTION</h4>
+					<p class='mywelllv1b text-justify'> > Finite Impulse Response(FIR)Filter is a filter whose impulse response is of finite duration. Impulse response of nth order FIR filter has N+1 samples before it settles to 0.</p>
+					<p class='mywelllv1b text-justify'>> In FIR filters inherently pipelined and Multiple Constant Multiplications(MCM) are used as they result in significant saving of computation.</p>
+					<p class='mywelllv1b text-justify'>> The aim of this project is to reduce the number of flip flops by Lifting DWT.</p>
+					<p class='mywelllv1b text-justify'>> It is composed of three basic operation stages: split or merge predict and update.</p>
+					<h3 class="text-center mywelllv1aa">LITERATURE SURVEY</h3>
+					<table class="table table-striped table-bordered">
+						<thead class="mywelllvtab">
+							<tr>
+								<th> S.No </th>
+								<th> Author Name & Year </th>
+								<th class="text-center"> Contribution </th>
+								<th class="text-center"> Inferences </th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>R.Rosita Rosini(2015)</td>
+								<td>This paper tells about the implementation of FIR filters using multi bit flip flops. This is used for high performance and low power applications.</td>
+								<td>The multi bit flip flops has a common clock. A 5 tap single bit and multi bit flip flops are implemented in which transistor numbers are reduced and power consumption is 15% less than normal Filter. </td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Thamizharasan.V (2014)</td>
+								<td>This paper explained about high performances applications of FIR Filter by using Computation Sharing Multiplier instead of Array Multiplier .</td>
+								<td>CSM add and shifts the operation and also targets computation reuse in vector-scalar products. The CSHM and circuit level techniques helps to get high performance FIR filtering operations.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td> Imran Ahmed Khan (2013)</td>
+								<td>This paper tells about analysis of existing architectures for flip flop.The comparison is based on transistor count, power, delay, PDP for Push pull, pass, pass isolation, CCMOS flip flop.</td>
+								<td>The proposed flip flop(DET) is found to be best energy efficient having second lowest PDP and second shortest delay and it is suited for low power high performance applications.</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Deepika(2016)</td>
+								<td>This paper tells about FIR filter in linear characteristic devices and FIR filter having combination of Booth multiplier and carry look ahed adder.</td>
+								<td>Combination of both Booth multiplier and carry look ahead adder made FIR filter more faster. Proposed MAC unit is more efficient in terms of speed and complexity. </td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Evangelos Kyritsis(2016)</td>
+								<td>This paper explains about implementation of FIR filter using Karatsuba Multiplication Algorithm. In this a parallel ,Modified Booth pre-encoded, Carry save Wallace tree Multiplier is used.</td>
+								<td>The Karatsuba Multiplication Algorithm (KMA) is a fast divide and conquer algorithm for multiplication of large numbers thereby the proposed circuit is highly efficient in terms of speed area and power when compared with Conventional FIR filter.</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>G.Prakash(2013)</td>
+								<td>This paper explains about the performance comparison of single bit flip flop(SBFF) over Multi bit flip flops.</td>
+								<td>The multi bit flip flop(MBFF) is designed by single clock pulse to get same functionality like 2 single bit flip flop.</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>Bo Yuan(2016)</td>
+								<td>This paper tells about the T tap FIR filter requires T copies of high complexity multiplier and its design consumes large amount of silicon area and power dissipation thereby stochastic computing based FIR filter is designed.</td>
+								<td>In this they proposed a new non scaled  stochastic adder with high accuracy than existing . </td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>Hui Liu(2016)</td>
+								<td>This paper explains about the design of FIR filters by implementing an efficient Signed Power of Two terms co efficient synthesis algorithm, where each co efficient is represented as sum of limited number of SPT terms.</td>
+								<td>CSE method is designed of low hardware cost FIR filters .By large number of taps ,the optimum common sub expressions among unequal weight.</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>Namrata Rapartiwar (2014)</td>
+								<td>This paper tells about performance analysis of Double Edge Triggered D Flip Flop. It is suitable for low power applications.</td>
+								<td>The power consumption ,Delay and power delay product are analysed and compared by simulating DET flip flops with different clock frequencies ranging from 1MHz to 10GHz and the result shows that proposed DETFF has improvement of 65.61%.</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3 class="mywelllv1aa">LITERATURE SUMMARY</h3>
+					<p class="text-justify mywelllvlaa1"><span>Filters</span> are almost used in all devices in Digital Signal Processing as they extract useful part from input signal. FIR filter impulse response is of finite duration. Impulse response of order FIR filter has N+1 samples  before it settles to 0. FIR filters are inherently pipelined and Multiplication Constant Multiplications(MCM). By using Multi Bit Flip Flops the Area Delay Product(ADP), Energy Per Sample (EPS) are reduced. To further decrease ADP,  PDP, EPS few challenges are present. By using Lifting DWT the performance of FIR filter is improved.</p>
+					<h3 class="mywelllv1aa">PROBLEM DEFINITION</h3>
+					<p class="text-justify mywelllvlaa1"><span>To </span>reduce the Area Delay Product (ADP), Energy per sample (EPS) and decrease time delay by reducing flip flops using Lifting DWT.</p>
+					<h3 class="mywelllv1aa">EXISTING SYSTEM</h3>
+					<figure><img class="mywelllv1dd" src="images/resume4.png"></figure>
+					<h3 class="mywelllv1aa3">Proposed system</h3>
+					<p class="text-justify mywelllv1aa2"><span>The </span>VLSI architectures for lifting schemes is presented in terms of speed and hardware requirements. The whole architecture is being optimized to achieve better speed up and higher hardware utilization by using a single clock for predict and update operation. The data flow of the proposed architecture is regular, simple, control complexity and achieves 100% hardware utilization.</p>
+					<p class="text-justify mywelllv1aa2"><span>The </span>Transpose form finite-impulse response (FIR) filters are inherently pipelined and support multiple constant multiplications (MCM) technique that results in significant saving of computation. The adders are reduced with MCM technique. Because of this area delay product(ADP), and energy per sample(EPS), are reduced. The number of multiplications and additions required for each filter increases filter order.</p>
+					<h3 class="mywelllv1aa">BLOCK DIAGRAM OF LIFTING DWT</h3>
+					<figure><img class="mywelllv1dd" src="images/resume3.png"></figure>
+					<h3 class="mywelllv1aa">RTL SCHEMATIC OF Lifting DWT</h3>
+					<figure><span><img class="mywelllv1dd1" src="images/resume5.png"></span><span><img class="mywelllv1dd1" src="images/resume6.png"></span></figure>
+					<h3 class="mywelllv1aa">XPOWER ANALYZER</h3>
+					<figure><img class="mywelllv1dd" src="images/resume8.png"></figure>
+					<h3 class="mywelllv1aa">Output</h3>
+					<figure><img class="mywelllv1dd" src="images/reume2.png"></figure>
+					<h3 class="mywelllv1aa">CONCLUSION</h3>
+					<p class="text-justify mywelllvlaa1"><span>The</span>proposed technique in the design of FIR filter, gives better response in terms of speed and count of flip flops in comparison to the MCM and Lifting DWT. We have achieved a design of a FIR filter using a Lifting Discrete Wavelet Transform which is faster by 22.1% and has reduced the delay of the FIR filter. Since our objective was to reduce the count of Flip Flops used in existing methodology of FIR filter, thus reduced by 8 flipflops than the existing methodology and the delay was also reduced, hence we achieved our objective. So, we practically saw that the Lifting DWT is much more efficient than existing methodology.</p>
+					<h3 class="text-center mywelllv1aa">PUBLICATIONS</h3>
+					<table class="table table-striped table-bordered">
+						<tbody>
+						<tr>
+							<td class="mywelllv1p">PAPER</td>
+							<td>REVIEW ON FIR FILTER ARCHITECTURE DESIGN AND ITS COMPUTATIONAL BLOCKS</td>
+						</tr>
+						<tr>
+							<td class="mywelllv1p">STATUS</td>
+							<td>Registered in NC-EVENT 2018, Cum Scopus Journal. Published in NC-EVENT 2018.</td>
+						</tr>
+						</tbody>
+					</table>
+					<h3 class="text-center mywelllv1aa">REFERENCES</h3>
+					<p class="text-justify mywelllvlaa1">[1]<span>R.Rosita Rosini, </span> R.Renita Rexy, ‘’ An Efficient VLSI Architecture for FIR Filter Using Multi-Bit Flip-Flops’’,KARPAGAM JOURNAL OF ENGINEERING RESEARCH (KJER), Volume No.: II, Special Issue on IEEE Sponsored International Conference on Intelligent Systems and Control (ISCO’15).</p>
+					<p class="text-justify mywelllvlaa1">[2]<span>Thamizharasan, </span> V, Erode, “An Efficient VLSI Architecture for FIR Filter using Computation Sharing Multiplier ”, International Journal of Computer Applications (0975 – 8887) Volume 54– No.14, September 2012 .</p>
+					<p class="text-justify mywelllvlaa1">[3]<span>Imran Ahmed Khan, </span> Mirza Tariq Beg , ” Design and Analysis of Low Power Master Slave Flip-Flops”, Journal of Microelectronics, Electronic Components and Materials Vol. 43, No. 1(2013), 41 – 49 .</p>
+					<p class="text-justify mywelllvlaa1">[4]<span>Deepika, </span>Nidhi Goel, “Design of FIR Filter Using Reconfigurable MAC Unit”, 2016 3rd International Conference on Signal Processing and Integrated Networks (SPIN).</p>
+					<p class="text-justify mywelllvlaa1">[5]<span>Evangelos Kyritsis, </span>Evangelos Kyritsis, Kiamal Pekmestzi, ‘’Hardware Efficient Fast FIR Filter Based on Karatsuba Algorithm’’, 2016 5th International Conference on Modern Circuits and System Technologies (MOCAST).</p>
+					<p class="text-justify mywelllvlaa1">[6]<span>Bo Yuan, </span>Yanzhi Wang, ‘’ High-Accuracy FIR Filter Design Using Stochastic Computing’’, 2016 IEEE Computer Society Annual Symposium on VLSI.</p>
+					<figure><img class="mywelllv1m" src="images/resume9.png" onclick="fullPrjClose()"></figure>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
