@@ -236,8 +236,30 @@
 				overflow: hidden;
 			}
 
-			.navbar1 a {
-				float: left;  
+			.dropdown1 {
+				overflow: hidden;
+			}
+
+			.dropdown1 .dropbtn1 {  
+				border: none;
+				outline: none;
+				margin: 0;
+			}
+
+			.dropdown-content1 {
+				display: none;
+				position: absolute;
+				width: 30%;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+				margin:auto;
+			}
+			
+			.dropdown1:hover .dropdown-content1 {
+				display: block;
+			}
+			.navbar1 {
+				overflow: hidden;
 			}
 
 			.dropdown1 {
@@ -253,15 +275,60 @@
 			.dropdown-content1 {
 				display: none;
 				position: absolute;
-				background-color: #f9f9f9;
 				width: 30%;
 				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-				z-index: 1;
+				z-index:1;
 				margin:auto;
 			}
 			
 			.dropdown1:hover .dropdown-content1 {
 				display: block;
+			}
+	
+
+			.dropdown2 {
+				position: relative;
+			}
+
+			.dropdown-content2 {
+				display: none;
+				position: absolute;
+				right: 0;
+				width:160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				z-index: 1;
+			}
+
+			.clear{
+				clear:both;
+			}
+			.dropdown-content2 a:hover {background-color: #f1f1f1;}
+			.dropdown2:hover .dropdown-content2 {display: block;}
+			
+			.imgan1{
+				background-image:url('images/resumea8.png');
+				background-size:cover;
+				background-position:center;
+				animation:imgan1a;
+				animation-iteration-count:infinite;
+				animation-duration:20s;
+			}
+			@keyframes imgan1a{
+				20%{background-image:url('images/resumea8a.png');}
+				20%{background-image:url('images/resumea8b.png');}
+				20%{background-image:url('images/resumea8c.png');}
+				10%{background-image:url('images/resumea8d.png');}
+				10%{background-image:url('images/resumea8e.png');}
+			}
+			.imgan2{
+				background-image:url('images/resumea5.png');
+				background-size:cover;
+				animation:imgan21;
+				animation-iteration-count:infinite;
+				animation-duration:20s;
+			}			
+			@keyframes imgan21{
+				50%{background-image:url('images/resumea5a.png');}
 			}
 		</style>
 		<script>
@@ -540,7 +607,7 @@
 							<button type="button" onclick="addtext()" ondblclick="removetext()" class="btn btn-info bt1 dropbtn1"><h5 class="bt1a"> Career Objective </h5></button>
 								<div class="dropdown-content1 text-center">
 									<h6 class="text-center">Overview</h6>
-									<img class="img-circle" src="images/resumea1.png" width="90%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
+									<img class="img-rounded" src="images/resumea1.png" width="90%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
 								</div>
 						</div>
 					</div>
@@ -559,30 +626,66 @@
 			<div class="row">
 				<div class="col-sm-2 text-center"></div>
 				<div class="col-sm-4 text-right">
-					<button type="button" class="btn btn-info bt2" onclick="academicQualifications()" ondblclick="academicQualificationsClose()">Academic Qualifications</button>
+					<div class="dropdown2">
+						<button type="button" class="btn btn-info bt2" onclick="academicQualifications()" ondblclick="academicQualificationsClose()">Academic Qualifications</button>
+						<div class="dropdown-content2" onclick="academicQualifications()" ondblclick="academicQualificationsClose()">
+							<h6 class="text-center">Overview</h6>
+							<img class="img-rounded" src="images/resumea2.png" width="100%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-4 text-left">
-					<button type="button" class="btn btn-info bt4" onclick="personalitySkills()" ondblclick="personalitySkillsClose()">Personality Traits</button>
+					<div class="dropdown2">
+						<button type="button" class="btn btn-info bt4" onclick="personalitySkills()" ondblclick="personalitySkillsClose()">Personality Traits</button>
+						<div class="dropdown-content2" style="left:0;"  onclick="personalitySkills()" ondblclick="personalitySkillsClose()">
+							<h6 class="text-center">Overview</h6>
+							<img class="img-rounded" src="images/resumea3.png" width="100%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-2 text-center"></div>
 			</div>
 			<div class="row">
 				<div class="col-sm-2 text-center"></div>
 				<div class="col-sm-4 text-center">
-					<button type="button" class="btn btn-info bt5" onclick="experiance()" ondblclick="experianceClose()">Experiance</button>
+					<div class="dropdown2">
+						<button type="button" class="btn btn-info bt5" onclick="experiance()" ondblclick="experianceClose()">Experiance</button>
+						<div class="dropdown-content2" style="left:40%;" onclick="experiance()" ondblclick="experianceClose()">
+							<h6 class="text-center">Overview</h6>
+							<img class="img-rounded" src="images/resumea4.png" width="100%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-4 text-center">
-					<button type="button" class="btn btn-info bt3" onclick="technicalSkills()" ondblclick="technicalSkillsClose()">Technical Skills</button>
+					<div class="dropdown2">	
+						<button type="button" class="btn btn-info bt3" onclick="technicalSkills()" ondblclick="technicalSkillsClose()">Technical Skills</button>
+						<div class="dropdown-content2" style="left:30%;" onclick="technicalSkills()" ondblclick="technicalSkillsClose()">
+							<h6 class="text-center">Overview</h6>
+							<img class="img-rounded imgan2" width="100%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-2 text-center"></div>
 			</div>
 			<div class="row">
 				<div class="col-sm-2 text-center"></div>
 				<div class="col-sm-4 text-center">
-					<button type="button" class="btn btn-info bt3" onclick="cirrcular()" ondblclick="cirrcularClose()">Co-Cirrcular Activities</button>
+					<div class="dropdown2">
+						<button type="button" class="btn btn-info bt3" onclick="cirrcular()" ondblclick="cirrcularClose()">Co-Cirrcular Activities</button>
+						<div class="dropdown-content2" style="left:40%;" onclick="cirrcular()" ondblclick="cirrcularClose()">
+							<h6 class="text-center">Overview</h6>
+							<img class="img-rounded" src="images/resumea6.png" width="100%" style="height:60px; border:1px solid black; box-shadow:3px 3px 5px gray">
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-4 text-center">
-					<button type="button" class="btn btn-info bt5" onclick="acdprj()" ondblclick="acdPrjClose()">Academic Project</button>
+					<div class="dropdown2">
+						<button type="button" class="btn btn-info bt5" onclick="acdprj()" ondblclick="acdPrjClose()">Academic Project</button>
+						<div class="dropdown-content2" style="left:30%;" onclick="acdprj()" ondblclick="acdPrjClose()">
+							<h6 class="text-center">Overview</h6>
+							<img class="img-rounded imgan1" width="100%" style="height:60px; border:1px solid black; box-shadow:3px 3px 5px gray">
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-2 text-center"></div>
 			</div>
@@ -592,7 +695,13 @@
 					<button type="button" class="btn btn-info bt3" onclick="other()" ondblclick="otherClose()">Other Projects Done</button>
 				</div>
 				<div class="col-sm-4 text-left">
-					<button type="button" class="btn btn-info bt5" onclick="personal()" ondblclick="personalClose()">Personal Details</button>
+					<div class="dropdown2">
+						<button type="button" class="btn btn-info bt5" onclick="personal()" ondblclick="personalClose()">Personal Details</button>
+						<div class="dropdown-content2" style="left:0;" onclick="personal()" ondblclick="personalClose()">
+							<h6 class="text-center">Overview</h6>
+							<img class="img-rounded" src="images/resumea9.png" width="100%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
+						</div>
+					</div>
 				</div>
 				<div class="col-sm-2 text-center"></div>
 			</div>
