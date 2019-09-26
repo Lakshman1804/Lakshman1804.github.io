@@ -47,6 +47,7 @@
 			}
 			.bt1{
 				width:100%;
+				border-radius: 15px;
 			}
 			.bt1a{
 				padding:10px 0px;
@@ -179,9 +180,7 @@
 			.pers2{
 				font-size:18px;
 			}
-			.pers3{
-				text-align:right;
-			}
+			
 			.mywelllv1{
 				color:#5bc0de;
 				font-weight:bold;
@@ -330,6 +329,23 @@
 			@keyframes imgan21{
 				50%{background-image:url('images/resumea5a.png');}
 			}
+			#navbar {
+  overflow: hidden;
+}
+
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 		</style>
 		<script>
 			function addtext()
@@ -508,7 +524,7 @@
 			}
 			function cirrcular()
 			{
-				document.getElementById("datashown").innerHTML="<div class='exp1'>Co-Cirrcular Activitie</div><p class='exp2'>> Participated in “DESIGN OF VHDL CODES” workshop conducted by SCHOOL OF ELECTRICAL AND ELECTRONICS at Sathyabama University.</p>";
+				document.getElementById("datashown").innerHTML="<div class='exp1'>Co-Curricular Activitie</div><p class='exp2'>> Participated in “DESIGN OF VHDL CODES” workshop conducted by SCHOOL OF ELECTRICAL AND ELECTRONICS at Sathyabama University.</p>";
 			}
 			function cirrcularClose()
 			{
@@ -523,13 +539,14 @@
 					for(var i=0;i<p.length;i++)
 					{
 						r=r+"<div class='row'>";
-							r=r+"<div class='col-sm-3'></div>"
-							r=r+"<div class='col-sm-3 text-justify'>";
-								r=r+"<label class='pers2 pers3'>"+ p[i].sub1+"</label>";
+							r=r+"<div class='col-sm-2'></div>"
+							r=r+"<div class='col-sm-4 text-justify'>";
+								r=r+"<label class='pers2 text-center'>"+ p[i].sub1+"</label>";
 							r=r+"</div>";
-							r=r+"<div class='col-sm-6 text-justify'>";
+							r=r+"<div class='col-sm-4 text-justify'>";
 								r=r+"<label class='pers2'>"+ p[i].sub2+"</label>";
 							r=r+"</div>";
+							r=r+"<div class='col-sm-2'></div>"
 						r=r+"</div>";
 					}
 				r=r+"</form>";
@@ -559,6 +576,7 @@
 			}
 			function fullprjct()
 			{
+				document.getElementById("datashown").style="overflow-x:hidden";
 						//alert();
 				if (window.XMLHttpRequest) 
 				{
@@ -585,21 +603,33 @@
 				document.getElementById('datashown').innerHTML="THANK YOU FOR YOUR VALUABLE TIME";
 				document.getElementById("datashown").style="font-size:25px; font-weight:bold";
 			}
+			
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 		</script>
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row mywell1">
+			<div class="row mywell1" id="navbar2">
 				<div class="col-sm-2"></div>
-				<div class="col-sm-4">
+				<div class="col-sm-4 text-left">
 					<label class="mywell1a"><span class="glyphicon glyphicon-user"> </span> P. LAKSHMAN KUMAR REDDY</label>
 				</div>
-				<div class="col-sm-4 text-right mywell1b">
+				<div class="col-sm-6 text-left mywell1b">
 					<label class="mywell1c"><span>Call: +918220999928 </span> E-mail @: peddireddylakshman@gmail.com</label>
 				</div>
-				<div class="col-sm-2"></div>
 			</div>
-			<div class="row">
+			<div class="row content">
 				<div class="col-sm-3"></div>
 				<div class="col-sm-6 text-center">
 					<div class="navbar1 text-center" onclick="addtext()" ondblclick="removetext()">
@@ -649,7 +679,7 @@
 				<div class="col-sm-2 text-center"></div>
 				<div class="col-sm-4 text-center">
 					<div class="dropdown2">
-						<button type="button" class="btn btn-info bt5" onclick="experiance()" ondblclick="experianceClose()">Experiance</button>
+						<button type="button" class="btn btn-info bt5" onclick="experiance()" ondblclick="experianceClose()">Experience</button>
 						<div class="dropdown-content2" style="left:40%;" onclick="experiance()" ondblclick="experianceClose()">
 							<h6 class="text-center">Overview</h6>
 							<img class="img-rounded" src="images/resumea4.png" width="100%" style="height:30px; border:1px solid black; box-shadow:3px 3px 5px gray">
@@ -671,7 +701,7 @@
 				<div class="col-sm-2 text-center"></div>
 				<div class="col-sm-4 text-center">
 					<div class="dropdown2">
-						<button type="button" class="btn btn-info bt3" onclick="cirrcular()" ondblclick="cirrcularClose()">Co-Cirrcular Activities</button>
+						<button type="button" class="btn btn-info bt3" onclick="cirrcular()" ondblclick="cirrcularClose()">Co-Curricular Activities</button>
 						<div class="dropdown-content2" style="left:40%;" onclick="cirrcular()" ondblclick="cirrcularClose()">
 							<h6 class="text-center">Overview</h6>
 							<img class="img-rounded" src="images/resumea6.png" width="100%" style="height:60px; border:1px solid black; box-shadow:3px 3px 5px gray">
